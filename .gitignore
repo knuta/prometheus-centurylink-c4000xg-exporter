@@ -19,3 +19,13 @@
 
 # Go workspace file
 go.work
+
+# Build output
+/prometheus-centurylink-c4000xg-exporter
+/__debug_bin
+/data
+/.env
+/.build
+/.deps
+/.release
+/.tarballs

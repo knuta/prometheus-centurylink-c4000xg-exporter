@@ -1,0 +1,14 @@
+[Unit]
+Description=CenturyLink C4000XG Prometheus exporter
+After=network.target
+StartLimitIntervalSec=0
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+WorkingDirectory=/usr/local/bin
+EnvironmentFile=/etc/prometheus/prometheus-centurylink-c4000xg-exporter.conf
+ExecStart=/usr/local/bin/prometheus-centurylink-c4000xg-exporter
+
+[Install]
+WantedBy=multi-user.target
